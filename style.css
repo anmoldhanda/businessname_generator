@@ -1,0 +1,98 @@
+/* ====================================================== google fonts ====================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --red-color: #ff6685;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace;
+}
+
+body {
+  background-image: url("static/sliderpic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.projectdetails-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.headline {
+  font-weight: normal;
+}
+
+.businessname-generator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  box-shadow: 0 0 5px 5px #c7cbf2;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+}
+
+.businessname-generator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.businessname-title {
+  text-transform: capitalize;
+}
+
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+#generate-businessname-btn {
+  background: var(--red-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+#generate-businessname-btn:hover {
+  background: var(--white-color);
+  color: var(--red-color);
+}
+
+#generate-businessname-btn:active {
+  transform: scale(1.1);
+}
+
+.generating-businessname-loader {
+  height: 6rem;
+  width: 6rem;
+}
+
+#generated-businessname {
+  text-transform: capitalize;
+}
