@@ -16,6 +16,7 @@ generate_businessname_btn.addEventListener("click", async ()=>{
     businessname_generator_finalresult_container.innerHTML = "";
     const h3_tag = document.createElement("h3");
     h3_tag.id = "generated-businessname";
+    // =============== iterate over all array's elements and insert a random item to the dom =============== 
     const iterate_firstword = first_words_arr[Math.floor(Math.random() * first_words_arr.length)];
     const iterate_secondword = second_words_arr[Math.floor(Math.random() * second_words_arr.length)];
     h3_tag.innerHTML = `${iterate_firstword} ${iterate_secondword}`;

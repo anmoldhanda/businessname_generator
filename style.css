@@ -1,4 +1,4 @@
-/* ====================================================== google fonts ====================================================== */
+/* ========================================== google fonts ========================================== */
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
 
 :root {
@@ -11,14 +11,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Overpass Mono", monospace;
-}
-
-body {
-  background-image: url("static/sliderpic.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 .projectdetails-container {
@@ -95,4 +87,5 @@ svg {
 
 #generated-businessname {
   text-transform: capitalize;
+  color: var(--red-color);
 }
